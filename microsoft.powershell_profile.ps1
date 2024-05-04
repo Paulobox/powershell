@@ -103,6 +103,9 @@ Set-PsFzfOption -PSReadLineChordProvider 'Ctrl+f' -PSReadLineChordReverseHistory
 #Icons
 Import-Module Terminal-Icons
 
+#Zoxide
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
 # Utilites
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
