@@ -38,6 +38,10 @@ Remove-Item -Path .\.git -Recurse -Force
 ## powershell scripts
 
 <details><summary>Convert from .png to .webp in current directory</summary>
+
+```
+[cwebp for windows](https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.4.0-windows-x64.zip)
+```
   
 ```powershell
 $outputDirectory = $PWD.Path
